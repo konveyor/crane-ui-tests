@@ -27,9 +27,7 @@ setup_crane() {
 
   sleep 120
 
-  # mkdir crane_temp
-  # shellcheck disable=SC2164
-  cd ./crane_temp
+  cd ./cypress/assets
   chmod +x ./crane
 
   DESTINATION_CONTEXT=$(oc config current-context)
